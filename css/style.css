@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherist;
+}
+
+input:-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  background: #fdf4c1;
+  display: flex;
+  justify-content: center;
+  padding-top: 300px;
+}
+
+#block {
+  width: 390px;
+}
+
+.ui-widget-content {
+  border: none;
+}
+
+#trash {
+  height: 120px;
+  width: 100%;
+  border: 1px solid #adc059;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-family: Arial;
+  font-weight: 600;
+  padding: 20px;
+}
+#trash div {
+  display: flex;
+}
+#trash div p {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+#gallery.custom-state-active {
+  background: #eee;
+}
+
+#gallery {
+  margin-top: 10px;
+  display: flex;
+}
+
+.draggable {
+  width: 96px;
+  margin: 0px 1px;
+}
+.draggable img {
+  width: 100%;
+  cursor: move;
+}
+
+#draggable {
+  width: 100px;
+  height: 100px;
+}
+
+#droppable {
+  width: 150px;
+  height: 150px;
+}
+
+.image-animation {
+  background-image: url("../img/epuff.png");
+  animation-name: cloud;
+  animation-duration: 300ms;
+  animation-timing-function: steps(1, start);
+  animation-play-state: 300ms;
+  position: relative;
+}
+
+.animation {
+  width: 128px;
+  height: 116px;
+  float: right;
+  position: absolute;
+}
+
+@keyframes cloud {
+  0% {
+    background-position: 0px 0px;
+  }
+  25% {
+    background-position: 0px 124px;
+  }
+  50% {
+    background-position: 0px 248px;
+  }
+  75% {
+    background-position: 0px 372px;
+  }
+  100% {
+    background-position: 0px 496px;
+  }
+}
